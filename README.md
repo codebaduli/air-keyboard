@@ -59,13 +59,14 @@ For example:
 
 ```text
 Detected → Not Detected → Detected → Not Detected
+```
 
 even when the user's finger is almost stationary.
 
 Using different thresholds for entering and leaving a state makes the detection more stable.
 
 Processing Pipeline
-
+```text
 The project follows a sequence of processing stages:
 
             Camera
@@ -86,6 +87,7 @@ The project follows a sequence of processing stages:
 
 Each stage processes the output of the previous stage before passing it to the next stage.
 
+
 Current Project Structure
 air-keyboard/
 │
@@ -95,31 +97,21 @@ air-keyboard/
 ├── .gitignore
 └── README.md
 Installation
+```
 
-Clone the repository:
+Clone the repository:`git clone https://github.com/codebaduli/air-keyboard.git`
 
-git clone https://github.com/codebaduli/air-keyboard.git
+Move into the project directory:`cd air-keyboard`
 
-Move into the project directory:
+Create a virtual environment:`python -m venv venv`
 
-cd air-keyboard
-
-Create a virtual environment:
-
-python -m venv venv
-
-Activate it on Windows:
-
-venv\Scripts\activate
+Activate it on Windows:`venv\Scripts\activate`
 
 Install the required dependencies:
-
-pip install opencv-python mediapipe
+`pip install opencv-python mediapipe`
 Running the Project
 
-After activating the virtual environment, run the required Python file:
-
-       python camera.py
+After activating the virtual environment, run the required Python file:``python camera.py`
 
 The exact file used to start the application may change as the project develops.
 
